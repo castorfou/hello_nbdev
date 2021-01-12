@@ -7,9 +7,9 @@
 # default_exp core
 
 
-# # module name here
+# # module core
 # 
-# > API details.
+# > Everything about core.
 
 # In[2]:
 
@@ -43,7 +43,9 @@ assert say_hello("Jeremy")=="Hello Jeremy!"
 
 # # HelloSayer class
 
-# In[10]:
+# By using `#exports` with an s, this will be exported both in lib and docs.
+
+# In[21]:
 
 
 #exports
@@ -52,23 +54,52 @@ class HelloSayer:
     def __init__(self, to): self.to = to
 
     def say(self):
-        "Do the saying"
+        """
+        Do the saying, and it can be a very long proper docstring
+        """
         return say_hello(self.to)
 
+    def say_emphasis(self, emphasis):
+        """
+        Do the saying, and add other things too
+        Input:
+        emphasis: String
+        Output:String
+        
+        """
+        return say_hello(self.to+emphasis)
 
-# In[11]:
+
+# By calling show_doc, this will be in the documentation
+
+# In[22]:
 
 
 show_doc(HelloSayer.say)
 
 
+# In[23]:
+
+
+show_doc(HelloSayer.say_emphasis)
+
+
+# ## example
+
 # In[12]:
-
-
 
 
 o = HelloSayer("Alexis")
 o.say()
+
+
+# # export nbdev
+
+# In[24]:
+
+
+#hide
+from nbdev.export import notebook2script; notebook2script()
 
 
 # In[ ]:

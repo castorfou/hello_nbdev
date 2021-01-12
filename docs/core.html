@@ -1,13 +1,13 @@
 ---
 
-title: module name here
+title: module core
 
 
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "API details."
-description: "API details."
+summary: "Everything about core."
+description: "Everything about core."
 nb_path: "00_core.ipynb"
 ---
 <!--
@@ -124,6 +124,13 @@ nb_path: "00_core.ipynb"
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>By using <code>#exports</code> with an s, this will be exported both in lib and docs.</p>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -136,8 +143,20 @@ nb_path: "00_core.ipynb"
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">to</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">to</span> <span class="o">=</span> <span class="n">to</span>
 
     <span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="s2">&quot;Do the saying&quot;</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Do the saying, and it can be a very long proper docstring</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">say_emphasis</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">emphasis</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Do the saying, and add other things too</span>
+<span class="sd">        Input:</span>
+<span class="sd">        emphasis: String</span>
+<span class="sd">        Output:String</span>
+<span class="sd">        </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">to</span><span class="o">+</span><span class="n">emphasis</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -172,6 +191,13 @@ nb_path: "00_core.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>By calling show_doc, this will be in the documentation</p>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -185,7 +211,7 @@ nb_path: "00_core.ipynb"
 <div class="output_markdown rendered_html output_subarea ">
 <h4 id="HelloSayer.say" class="doc_header"><code>HelloSayer.say</code><a href="https://github.com/castorfou/hello_nbdev/tree/master/hello_nbdev/core.py#L16" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>HelloSayer.say</code>()</p>
 </blockquote>
-<p>Do the saying</p>
+<p>Do the saying, and it can be a very long proper docstring</p>
 
 </div>
 
@@ -197,6 +223,40 @@ nb_path: "00_core.ipynb"
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="HelloSayer.say_emphasis" class="doc_header"><code>HelloSayer.say_emphasis</code><a href="https://github.com/castorfou/hello_nbdev/tree/master/hello_nbdev/core.py#L22" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>HelloSayer.say_emphasis</code>(<strong><code>emphasis</code></strong>)</p>
+</blockquote>
+<p>Do the saying, and add other things too
+Input:
+emphasis: String
+Output:String</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="example">example<a class="anchor-link" href="#example"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -231,6 +291,12 @@ nb_path: "00_core.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="export-nbdev">export nbdev<a class="anchor-link" href="#export-nbdev"> </a></h1>
+</div>
+</div>
+</div>
 </div>
  
 

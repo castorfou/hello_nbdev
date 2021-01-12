@@ -16,7 +16,9 @@ from hello_nbdev import *
 
 # ## Install
 
-# `pip install your_project_name`
+# #not yet deployed to pip
+# 
+# `pip install hello_nbdev`
 
 # ## How to use
 

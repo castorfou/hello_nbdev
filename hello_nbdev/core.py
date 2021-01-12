@@ -14,6 +14,17 @@ class HelloSayer:
     def __init__(self, to): self.to = to
 
     def say(self):
-        "Do the saying"
+        """
+        Do the saying, and it can be a very long proper docstring
+        """
         return say_hello(self.to)
 
+    def say_emphasis(self, emphasis):
+        """
+        Do the saying, and add other things too
+        Input:
+        emphasis: String
+        Output:String
+
+        """
+        return say_hello(self.to+emphasis)

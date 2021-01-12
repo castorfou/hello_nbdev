@@ -6,7 +6,9 @@ This file will become your README and also the index of your documentation.
 
 ## Install
 
-`pip install your_project_name`
+#not yet deployed to pip
+
+`pip install hello_nbdev`
 
 ## How to use
 
