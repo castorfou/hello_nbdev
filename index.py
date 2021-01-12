@@ -5,7 +5,7 @@
 
 
 #hide
-import hello_nbdev
+from hello_nbdev import *
 
 
 # # Welcome to hello_nbdev
@@ -22,7 +22,7 @@ import hello_nbdev
 
 # Fill me in please! Don't forget code examples:
 
-# In[2]:
+# In[4]:
 
 
 say_hello("Guillaume")
