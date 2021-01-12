@@ -41,6 +41,36 @@ say_hello("Sylvain")
 assert say_hello("Jeremy")=="Hello Jeremy!"
 
 
+# # HelloSayer class
+
+# In[10]:
+
+
+#exports
+class HelloSayer:
+    "Say hello to `to` using `say_hello`"
+    def __init__(self, to): self.to = to
+
+    def say(self):
+        "Do the saying"
+        return say_hello(self.to)
+
+
+# In[11]:
+
+
+show_doc(HelloSayer.say)
+
+
+# In[12]:
+
+
+
+
+o = HelloSayer("Alexis")
+o.say()
+
+
 # In[ ]:
 
 
