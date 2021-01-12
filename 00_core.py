@@ -29,11 +29,15 @@ def say_hello(to):
 
 # We can use this to say hello to anyone
 
+# ## example
+
 # In[6]:
 
 
 say_hello("Sylvain")
 
+
+# ## test
 
 # In[7]:
 
@@ -94,6 +98,8 @@ o.say()
 
 
 # # export nbdev
+# 
+# (not for the documentation, to see if it can be hidden somehow)
 
 # In[24]:
 
