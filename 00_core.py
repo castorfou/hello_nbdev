@@ -90,18 +90,24 @@ show_doc(HelloSayer.say_emphasis)
 
 # ## example
 
-# In[12]:
+# In[27]:
 
 
 o = HelloSayer("Alexis")
 o.say()
 
 
+# In[29]:
+
+
+o.say_emphasis('!!!')
+
+
 # # export nbdev
 # 
 # (not for the documentation, to see if it can be hidden somehow)
 
-# In[24]:
+# In[25]:
 
 
 #hide

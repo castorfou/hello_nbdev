@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[ ]:
 
 
+#hide
 get_ipython().run_line_magic('load_ext', 'autoreload')
 get_ipython().run_line_magic('autoreload', '2')
 
@@ -22,9 +23,8 @@ from hello_nbdev import *
 # This file will become your README and also the index of your documentation.
 
 # ## Install
+# if it was deployed to pip, I could call this to integrate and use in my project
 
-# #not yet deployed to pip
-# 
 # `pip install hello_nbdev`
 
 # ## How to use

@@ -2,16 +2,10 @@
 > Amazng tuto.
 
 
-```python
-%load_ext autoreload
-%autoreload 2
-```
-
 This file will become your README and also the index of your documentation.
 
 ## Install
-
-#not yet deployed to pip
+if it was deployed to pip, I could call this to integrate and use in my project
 
 `pip install hello_nbdev`
 
